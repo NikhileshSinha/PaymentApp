@@ -36,6 +36,9 @@
         <argument
             android:name="amount"
             app:argType="float" />
+        <action
+            android:id="@+id/action_statusFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/viewBalanceFragment"
