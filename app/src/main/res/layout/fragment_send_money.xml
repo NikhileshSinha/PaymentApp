@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendMoneyFragment"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="339dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="72dp"
+        android:text="SEND MONEY"
+        android:textAlignment="center"
+        android:textColor="@color/dull_black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameOfSender"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:hint="UPI id (eg: 1234567890@paytm)"
+        android:inputType="textPersonName"
+        android:textColor="@color/dull_white"
+        android:textColorHint="@color/dull_white"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buton_background"
+        android:text="next"
+        android:textColor="@color/dull_black"
+        app:layout_constraintEnd_toEndOf="@+id/nameOfSender"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/nameOfSender"
+        app:layout_constraintTop_toBottomOf="@+id/fillAmount" />
+
+    <EditText
+        android:id="@+id/fillAmount"
+        android:layout_width="338dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:ems="6"
+        android:hint="Fill amount"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="@color/dull_white"
+        android:textColorHint="@color/dull_white"
+        app:layout_constraintEnd_toEndOf="@+id/nameOfSender"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/nameOfSender"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfSender" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
