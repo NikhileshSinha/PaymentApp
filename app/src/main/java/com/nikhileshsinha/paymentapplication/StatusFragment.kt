@@ -29,7 +29,7 @@ class StatusFragment : Fragment() {
         binding.result.text = getString(R.string.status_msg, args.amount, args.name)
 
         binding.btnCnfrm.setOnClickListener {
-            findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_statusFragment_to_homeFragment)
         }
     }
 
